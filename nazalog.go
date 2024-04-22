@@ -1,8 +1,6 @@
 package logger
 
-import (
-	"github.com/q191201771/naza/pkg/nazalog"
-)
+import "github.com/kordar/nazalog"
 
 type nazalogAdapt struct {
 	l nazalog.Logger
