@@ -1,6 +1,6 @@
 package logger
 
-var std Logger // 标准输出
+var std Logger = StdLogger{} // 标准输出
 
 func WithField(key string, value interface{}) Logger {
 	return std.WithField(key, value)
