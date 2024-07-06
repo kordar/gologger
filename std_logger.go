@@ -18,7 +18,7 @@ func (s StdLogger) Trace(args ...interface{}) {
 }
 
 func (s StdLogger) Tracef(format string, args ...interface{}) {
-	log.Printf(format+"\n", args)
+	log.Printf(format+"\n", args...)
 }
 
 func (s StdLogger) Debug(args ...interface{}) {
@@ -26,7 +26,7 @@ func (s StdLogger) Debug(args ...interface{}) {
 }
 
 func (s StdLogger) Debugf(format string, args ...interface{}) {
-	log.Printf(format+"\n", args)
+	log.Printf(format+"\n", args...)
 }
 
 func (s StdLogger) Info(args ...interface{}) {
@@ -34,7 +34,7 @@ func (s StdLogger) Info(args ...interface{}) {
 }
 
 func (s StdLogger) Infof(format string, args ...interface{}) {
-	log.Printf(format+"\n", args)
+	log.Printf(format+"\n", args...)
 }
 
 func (s StdLogger) Warn(args ...interface{}) {
@@ -42,7 +42,7 @@ func (s StdLogger) Warn(args ...interface{}) {
 }
 
 func (s StdLogger) Warnf(format string, args ...interface{}) {
-	log.Printf(format+"\n", args)
+	log.Printf(format+"\n", args...)
 }
 
 func (s StdLogger) Error(args ...interface{}) {
@@ -50,7 +50,7 @@ func (s StdLogger) Error(args ...interface{}) {
 }
 
 func (s StdLogger) Errorf(format string, args ...interface{}) {
-	log.Printf(format+"\n", args)
+	log.Printf(format+"\n", args...)
 }
 
 func (s StdLogger) Panic(args ...interface{}) {
@@ -58,7 +58,7 @@ func (s StdLogger) Panic(args ...interface{}) {
 }
 
 func (s StdLogger) Panicf(format string, args ...interface{}) {
-	log.Panicf(format+"\n", args)
+	log.Panicf(format+"\n", args...)
 }
 
 func (s StdLogger) Fatal(args ...interface{}) {
@@ -66,5 +66,5 @@ func (s StdLogger) Fatal(args ...interface{}) {
 }
 
 func (s StdLogger) Fatalf(format string, args ...interface{}) {
-	log.Fatalf(format+"\n", args)
+	log.Fatalf(format+"\n", args...)
 }
